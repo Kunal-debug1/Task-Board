@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f4f6;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Add task */
+.add-task {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.add-task button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+/* Focus mode */
+.focus-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.focus-on {
+  background-color: #facc15;
+}
+
+.focus-off {
+  background-color: #e5e7eb;
+}
+
+/* Progress */
+.progress-text {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #22c55e;
+  transition: width 0.3s ease;
+}
+
+/* Tasks */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 8px;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 12px;
+}
