@@ -3,7 +3,6 @@
 A simple full-stack Task Board application built using React and Flask.  
 The app allows users to add tasks, mark them as completed, delete tasks, and track progress.  
 It also includes a **Focus Mode** to show only pending tasks for better productivity.
-
 ---
 
 ## 🚀 Features
