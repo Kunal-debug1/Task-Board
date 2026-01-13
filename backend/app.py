@@ -7,11 +7,9 @@ CORS(app)  # allow frontend requests
 tasks = []
 task_id_counter = 1
 
-
 @app.route("/tasks", methods=["GET"])
 def get_tasks():
     return jsonify(tasks)
-
 
 @app.route("/tasks", methods=["POST"])
 def add_task():
@@ -19,7 +17,6 @@ def add_task():
 
     data = request.get_json() or {}
     title = data.get("title")
-
 
     if not title:
         return jsonify({"error": "Title is required"}), 400
@@ -34,7 +31,6 @@ def add_task():
     task_id_counter += 1
 
     return jsonify(task), 201
-
 
 @app.route("/tasks/<int:task_id>", methods=["PUT"])
 def toggle_task(task_id):
